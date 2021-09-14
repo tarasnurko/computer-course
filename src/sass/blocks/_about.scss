@@ -1,0 +1,19 @@
+.about {
+  padding-top: 200px;
+  &__wrapper {
+    display: flex;
+  }
+  &__img {
+    padding-top: 66px;
+    width: 526px;
+    height: 499px;
+    margin-right: 134px;
+    border: 30px solid transparent;
+    border-image: $grad-second;
+    border-image-slice: 1;
+  }
+  &__text {
+    margin-top: 45px;
+    opacity: 1;
+  }
+}
