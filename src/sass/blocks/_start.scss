@@ -2,10 +2,6 @@
   padding-top: 200px;
   @include background-main;
 
-  font-size: 26px;
-  color: #fff;
-  opacity: 1;
-
   padding-bottom: 40px;
   &__header {
     display: flex;
@@ -22,9 +18,6 @@
     margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    &-item {
-
-    }
     
     &-num {
       margin-bottom: 20px;
