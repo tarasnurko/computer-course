@@ -1,5 +1,6 @@
 .about {
   padding-top: 200px;
+  @include background-main;
   &__wrapper {
     display: flex;
   }
@@ -8,7 +9,7 @@
     width: 526px;
     height: 499px;
     margin-right: 134px;
-    border: 30px solid transparent;
+    border: 30px solid;
     border-image: $grad-second;
     border-image-slice: 1;
   }

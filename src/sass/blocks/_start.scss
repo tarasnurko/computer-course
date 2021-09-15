@@ -1,0 +1,75 @@
+.start {
+  padding-top: 200px;
+  @include background-main;
+
+  font-size: 26px;
+  color: #fff;
+  opacity: 1;
+
+  padding-bottom: 40px;
+  &__header {
+    display: flex;
+  }
+  &__icon {
+    margin-right: 23px;
+  }
+  &__text {
+    margin-top: 50px;
+    width: 411px;
+    opacity: 0.5;
+  }
+  &__info {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    &-item {
+
+    }
+    
+    &-num {
+      margin-bottom: 20px;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 140%;
+      color: #fff;
+    }
+    &-graph {
+      display: flex;
+      align-self: center;
+      width: 100%;
+      height: 80px;
+      &-1 {
+        align-self: center;
+        width: 100%;
+        height: 100%;
+        background-image: $grad-second;
+      }
+      &-2 {
+        align-self: center;
+        width: 100%;
+        height: 60px;
+        background-image: $grad-second;
+        transform: rotate(180deg);
+      }
+      &-3 {
+        align-self: center;
+        width: 100%;
+        height: 30px;
+        background-image: $grad-second;
+      }
+      &-4 {
+        align-self: center;
+        width: 100%;
+        height: 10px;
+        background-image: $grad-second;
+        transform: rotate(180deg);
+      }
+    }
+    &-text {
+      padding: 35px 18px 0 0;
+      font-size: 14px;
+      opacity: 0.5;
+    }
+  }
+}
+
