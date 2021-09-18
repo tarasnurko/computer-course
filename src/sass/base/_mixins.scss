@@ -1,3 +1,16 @@
 @mixin background-main {
   background: url('../img/bgc.jpg') center center / cover repeat-y;
 }
+
+@mixin hor_line {
+  &:after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    opacity: 0.3;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

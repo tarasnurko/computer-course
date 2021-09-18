@@ -1,0 +1,77 @@
+.program {
+  padding-top: 200px;
+  @include background-main;
+  &__header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__icon {
+    transform: rotate(180deg);
+  }
+  &__title {
+    margin-top: 32px;
+  }
+  &__text {
+    margin-top: 30px;
+    width: 412px;
+    text-align: center;
+    opacity: 0.5;
+  }
+  &__week {
+    &-wrapper {
+      position: relative;
+      margin-top: 90px;
+      display: grid;
+      grid-template-columns: repeat(2, 304px);
+      justify-content: center;
+      column-gap: 142px;
+      &:before {
+        position: absolute;
+        content: '';
+        width: 6px;
+        height: calc(100% + 20px);
+        top: -10px;
+        transform: translateX(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: $grad-second;
+      }
+    }
+    &-item {
+      margin-top: 95px;
+      width: 304px;
+      height: 95px;
+      text-align: right;
+      &:nth-child(2n) {
+        text-align: left;
+        position: relative;
+        @include hor_line;
+        &:after {
+          left: -68px;
+        }
+      }
+      &:nth-child(2n+1) {
+        margin-top: 0;
+        position: relative;
+        @include hor_line;
+        &:after {
+          right: -68px;
+          
+        }
+      }
+    }
+    &-title {
+      font-size: 14px;
+      opacity: 0.5;
+    }
+    &-descr {
+      margin-top: 15px;
+      font-size: 18px;
+      line-height: 160%;
+      color: #fff;
+      opacity: 1;
+    }
+  }
+}
