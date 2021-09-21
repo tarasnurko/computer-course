@@ -26,6 +26,7 @@
     }
   }
   .menu {
+    margin: 0;
     display: flex;
     list-style-type: none;
     &__item {
@@ -46,5 +47,26 @@
       }
     }
   }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 21px;
+    position: absolute;
+    top: 48px;
+    right: 40px;
+    cursor: pointer;
+    span {
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.menu-adapted {
+  display: none;
 }
 
