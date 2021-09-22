@@ -20,6 +20,13 @@
       }
     }
   }
+  .partners {
+    &__brand {
+      &-item {
+        padding: 29px 29px;
+      }
+    }
+  }
 }
 
 @media (max-height: 800px) {
@@ -86,6 +93,16 @@
     padding-top: 160px;
     &__text {
       margin-top: 30px;
+    }
+  }
+  .partners {
+    &__brand {
+      &-item {
+        padding: 29px 29px;
+        img {
+          width: 150px;
+        }
+      }
     }
   }
 }
@@ -197,6 +214,35 @@
       }
     }
   }
+  .advantages {
+    padding-top: 160px;
+    &__wrapper {
+      margin-top: 100px;
+    }
+    &__item {
+      &-title {
+        font-size: 16px;
+      }
+      &-text {
+        font-size: 12px;
+      }
+    }
+  }
+  .partners {
+    padding-top: 160px;
+    &__brand {
+      &-wrapper {
+        margin-top: 80px;
+        grid-template-rows: repeat(2, 90px);
+      }
+      &-item {
+        padding: 10px 15px;
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -251,6 +297,44 @@
       }
       &-num {
         font-size: 28px;
+      }
+    }
+  }
+  .advantages {
+    &__wrapper {
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      margin-top: 60px;
+      &-title {
+        margin-top: 20px;
+      }
+      &-text {
+        margin-top: 20px;
+      }
+    }
+  }
+  .partners {
+    padding-top: 100px;
+    &__icon {
+      margin-right: 23px;
+    }
+    &__brand {
+      &-wrapper {
+        margin-top: 60px;
+        grid-template: repeat(4, 90px) / repeat(2, 220px);
+        justify-content: center;
+      }
+      &-item {
+        padding: 10px 25px;
+        &:nth-child(2n) {
+          border-right: none;
+        }
+        &:nth-child(n-6) {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
       }
     }
   }
@@ -360,6 +444,33 @@
       }
       &-text {
         padding-right: 0;
+      }
+    }
+  }
+  .advantages {
+    &__item {
+      width: 300px;
+      &-title {
+        font-size: 16px;
+      }
+    }
+  }
+  .partners {
+    &__icon {
+      svg {
+        width: 70px;
+        height: 35px;
+      }
+    }
+    &__brand {
+      &-wrapper {
+        grid-template: repeat(4, 60px) / repeat(2, 140px);
+      }
+      &-item {
+        padding: 5px 15px;
+        img {
+          width: 100px;
+        }
       }
     }
   }
