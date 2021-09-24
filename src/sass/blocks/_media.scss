@@ -75,6 +75,9 @@
       }
     }
   }
+  .promo {
+    background: url('../img/main-screen__bgc.png') no-repeat 60%/cover;
+  }
   .about {
     &__img {
       margin-right: 70px;
@@ -98,7 +101,7 @@
   .partners {
     &__brand {
       &-item {
-        padding: 29px 29px;
+        padding: 40px 40px;
         img {
           width: 150px;
         }
@@ -290,7 +293,7 @@
     }
     &__info {
       &-item {
-        grid-template-columns: 60px 100px 350px;
+        grid-template-columns: 60px 100px 290px;
       }
       &-text {
         padding-right: 50px;
@@ -332,11 +335,64 @@
         &:nth-child(2n) {
           border-right: none;
         }
-        &:nth-child(n-6) {
+        &:nth-child(-n + 6) {
           border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         }
       }
     }
+  }
+  .program {
+    padding-top: 140px;
+    &__week {
+      &-wrapper {
+        margin-top: 70px;
+        grid-template-columns: repeat(2,210px);
+        column-gap: 110px;
+      }
+      &-item {
+        width: 210px;
+        &:nth-child(2n) {
+          &:after {
+            width: 30px;
+            left: -52px;
+          }
+          .program__week-descr {
+            padding-right: 20px;
+          }
+        }
+        &:nth-child(2n+1) {
+          &:after {
+            width: 30px;
+            right: -52px;
+          }
+          .program__week-descr {
+            padding-left: 20px;
+          }
+        }
+      }
+      &-descr {
+        width: 210px;
+      }
+    }
+  }
+  .teachers {
+    padding-top: 140px;
+    &__wrapper {
+      margin-top: 50px;
+      flex-direction: column;
+    }
+    &__item {
+      margin-top: 60px;
+      &-name {
+        margin-top: 20px;
+      }
+      &-btn {
+        margin-top: 20px;
+      }
+    }
+  }
+  .footer {
+    padding-top: 160px;
   }
 }
 
@@ -471,6 +527,90 @@
         img {
           width: 100px;
         }
+      }
+    }
+  }
+  .program {
+    &__icon {
+      svg {
+        width: 70px;
+        height: 35px;
+      }
+    }
+    &__title {
+      margin-top: 20px;
+    }
+    &__text {
+      width: 300px;
+    }
+    &__week {
+      &-wrapper {
+        padding-left: 50px;
+        grid-template-columns: 260px;
+        column-gap: unset;
+        justify-content: left;
+        &:before {
+          left: 50px;
+          transform: unset;
+        }
+      }
+      &-item {
+        text-align: left;
+        margin: 20px 0 0 50px;
+        &:nth-child(2n) {
+          &:after {
+            left: -44px;
+          }  
+          .program__week-descr {
+            padding: 0;
+          }
+        }
+        &:nth-child(2n+1) {
+          &:after {
+          right: unset;
+          left: -44px;
+          }
+          .program__week-descr {
+            padding: 0;
+          }
+        }
+      } 
+      &-descr {
+        padding: 0;
+      }
+    }
+  }
+  .teachers {
+    &__icon {
+      margin-right: 23px;
+      svg {
+        width: 70px;
+        height: 35px;
+      }
+    }
+  }
+  .footer {
+    padding-top: 140px;
+    &__text {
+      margin-top: 18px;
+      width: 300px;
+    }
+    &__form {
+      margin-top: 40px;
+      width: 300px;
+    }
+    &__input {
+      width: 300px;
+    }
+    &__btn {
+      top: 65px;
+      right: unset;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &__social {
+      &-wrapper {
+        margin-top: 110px;
       }
     }
   }

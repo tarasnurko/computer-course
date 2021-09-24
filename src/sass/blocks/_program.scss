@@ -51,6 +51,9 @@
         &:after {
           left: -68px;
         }
+        .program__week-descr {
+          padding-right: 76px;
+        }
       }
       &:nth-child(2n+1) {
         margin-top: 0;
@@ -58,7 +61,9 @@
         @include hor_line;
         &:after {
           right: -68px;
-          
+        }
+        .program__week-descr {
+          padding-left: 76px;
         }
       }
     }
@@ -67,7 +72,7 @@
       opacity: 0.5;
     }
     &-descr {
-      width: 230px;
+      width: 304px;
       margin-top: 15px;
       font-size: 18px;
       line-height: 160%;
